@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Linkeddata : A metadistribution of RDF.rb including all parsing/serialization plugins." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Linkeddata</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ruby-rdf/linkeddata">View on GitHub</a>
+
+          <h1 id="project_title">Linkeddata</h1>
+          <h2 id="project_tagline">A metadistribution of RDF.rb including all parsing/serialization plugins.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ruby-rdf/linkeddata/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ruby-rdf/linkeddata/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="linked-data-for-ruby" class="anchor" href="#linked-data-for-ruby"><span class="octicon octicon-link"></span></a>Linked Data for Ruby</h1>
+
+<p>This is a meta-distribution of <a href="http://ruby-rdf.github.com/rdf">RDF.rb</a> including all currently available
+and usable parsing/serialization plugins, intended to make producing and
+consuming <a href="http://linkeddata.org/">Linked Data</a> with Ruby as quick &amp; easy as possible.</p>
+
+<ul>
+<li><a href="http://github.com/datagraph/linkeddata">http://github.com/datagraph/linkeddata</a></li>
+</ul><p><a href="http://badge.fury.io/rb/linkeddata"><img src="https://badge.fury.io/rb/linkeddata.png" alt="Gem Version"></a>
+<a href="http://travis-ci.org/ruby-rdf/linkeddata"><img src="https://travis-ci.org/ruby-rdf/linkeddata.png?branch=master" alt="Build Status"></a></p>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Includes <a href="http://en.wikipedia.org/wiki/N-Triples">N-Triples</a> and <a href="http://sw.deri.org/2008/07/n-quads/">N-Quads</a> support using <a href="http://ruby-rdf.github.com/rdf">RDF.rb</a>.</li>
+<li>Includes <a href="http://en.wikipedia.org/wiki/RDF/XML">RDF/XML</a> support using the <a href="http://ruby-rdf.github.com/rdf-rdfxml">RDF::RDFXML</a> gem.</li>
+<li>Includes <a href="http://en.wikipedia.org/wiki/Microdata_(HTML)">Microdata</a> support using the <a href="http://ruby-rdf.github.com/rdf-microdata">RDF::Microdata</a> gem.</li>
+<li>Includes <a href="http://en.wikipedia.org/wiki/Notation3">Notation3</a> support using the <a href="http://ruby-rdf.github.com/rdf-n3">RDF::N3</a> gem.</li>
+<li>Includes <a href="http://en.wikipedia.org/wiki/RDFa">RDFa</a> support using the <a href="http://ruby-rdf.github.com/rdf-rdfa">RDF::RDFa</a> gem.</li>
+<li>Includes <a href="http://n2.talis.com/wiki/RDF_JSON_Specification">RDF/JSON</a> support using the <a href="http://ruby-rdf.github.com/rdf-json">RDF::JSON</a> gem.</li>
+<li>Includes <a href="http://www.w3.org/2004/03/trix/">TriX</a> support using the <a href="http://ruby-rdf.github.com/rdf-trix">RDF::TriX</a> gem.</li>
+<li>Includes <a href="http://www.w3.org/TR/turtle/">Turtle</a> support using the <a href="http://ruby-rdf.github.com/rdf-turtle">RDF::Turtle</a> gem.</li>
+<li>Includes [JSON-LD][] support using the <a href="http://gkellogg.github.com/json-ld">JSON::LD</a> gem.</li>
+<li>Includes Aggregate Repository support using the [Aggregate Repo][], which allows graphs and repositories to be aggregated from multiple sources.</li>
+<li>Includes <a href="http://en.wikipedia.org/wiki/Sparql">SPARQL</a> support using the <a href="http://ruby-rdf.github.com/sparql">SPARQL</a> and <a href="http://ruby-rdf.github.com/sparql-client">SPARQL::Client</a> gems</li>
+<li>Maintains release parity with RDF.rb.</li>
+</ul><h2>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<pre><code>require 'linkeddata'
+</code></pre>
+
+<h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<ul>
+<li><a href="http://rdf.rubyforge.org/">http://rdf.rubyforge.org/</a></li>
+<li><a href="http://blog.datagraph.org/2010/03/rdf-for-ruby">http://blog.datagraph.org/2010/03/rdf-for-ruby</a></li>
+<li><a href="http://blog.datagraph.org/2010/04/parsing-rdf-with-ruby">http://blog.datagraph.org/2010/04/parsing-rdf-with-ruby</a></li>
+</ul><h2>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<ul>
+<li>
+<a href="http://ruby-rdf.github.com/rdf">RDF.rb</a> (&gt;= 1.1.0)</li>
+<li>
+<a href="http://ruby-rdf.github.com/rdf">RDF::AggregateRepo</a> (&gt;= 1.1.0)</li>
+<li>[RDF::Isomorphic]<a href="%3E=%201.1.0"></a>
+</li>
+<li>
+<a href="http://ruby-rdf.github.com/rdf-json">RDF::JSON</a> (&gt;= 1.1.0)</li>
+<li>
+<a href="http://ruby-rdf.github.com/rdf-microdata">RDF::Microdata</a> (&gt;= 1.1.0)</li>
+<li>
+<a href="http://ruby-rdf.github.com/rdf-n3">RDF::N3</a> (&gt;= 1.1.0)</li>
+<li>
+<a href="http://ruby-rdf.github.com/rdf-rdfa">RDF::RDFa</a> (&gt;= 1.1.0)</li>
+<li>
+<a href="http://ruby-rdf.github.com/rdf-rdfxml">RDF::RDFXML</a> (&gt;= 1.1.0)</li>
+<li>[RDF::TriG]<a href="%3E=%201.1.0"></a>
+</li>
+<li>
+<a href="http://ruby-rdf.github.com/rdf-trix">RDF::TriX</a> (&gt;= 1.1.0)</li>
+<li>
+<a href="http://ruby-rdf.github.com/rdf-turtle">RDF::Turtle</a> (&gt;= 1.1.0)</li>
+<li>
+<a href="http://gkellogg.github.com/json-ld">JSON::LD</a> (&gt;= 1.1.0)</li>
+<li>
+<a href="http://ruby-rdf.github.com/sparql">SPARQL</a> (&gt;= 1.1.2)</li>
+<li>
+<a href="http://ruby-rdf.github.com/sparql-client">SPARQL::Client</a> (&gt;= 1.1.0)</li>
+</ul><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>The recommended installation method is via <a href="http://rubygems.org/">RubyGems</a>.
+To install the latest official release of the gem, do:</p>
+
+<pre><code>% [sudo] gem install linkeddata
+</code></pre>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>This is free and unencumbered public domain software. For more information,
+see <a href="http://unlicense.org/">http://unlicense.org/</a> or the accompanying {file:UNLICENSE} file.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Linkeddata maintained by <a href="https://github.com/ruby-rdf">ruby-rdf</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
