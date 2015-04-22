@@ -44,11 +44,11 @@ consuming <a href="http://linkeddata.org/">Linked Data</a> with Ruby as quick &a
 <li>Includes  <a href="http://www.w3.org/TR/rdf11-mt/">RDFS</a>, <a href="http://schema.org/">schema.org</a> and limited <a href="http://www.w3.org/TR/owl2-overview/">OWL</a> reasoning using the <a href="http://ruby-rdf.github.com/rdf-reasoner">RDF::Reasoner</a> gem.</li>
 <li>Includes <a href="http://www.w3.org/TR/rdfa-core/">RDFa</a> support using the <a href="http://ruby-rdf.github.com/rdf-rdfa">RDF::RDFa</a> gem.</li>
 <li>Includes <a href="http://n2.talis.com/wiki/RDF_JSON_Specification">RDF/JSON</a> support using the <a href="http://ruby-rdf.github.com/rdf-json">RDF::JSON</a> gem.</li>
-<li>Includes <a href="http://www.w3.org/TR/trig/">TriG</a> support using the [RDF::TriG][] gem.</li>
+<li>Includes <a href="http://www.w3.org/TR/trig/">TriG</a> support using the <a href="http://ruby-rdf.github.com/rdf-trig">RDF::TriG</a> gem.</li>
 <li>Includes <a href="http://www.w3.org/2004/03/trix/">TriX</a> support using the <a href="http://ruby-rdf.github.com/rdf-trix">RDF::TriX</a> gem.</li>
 <li>Includes <a href="http://www.w3.org/TR/turtle/">Turtle</a> support using the <a href="http://ruby-rdf.github.com/rdf-turtle">RDF::Turtle</a> gem.</li>
-<li>Includes [JSON-LD][] support using the <a href="http://gkellogg.github.com/json-ld">JSON::LD</a> gem.</li>
-<li>Includes Aggregate Repository support using the [Aggregate Repo][], which allows graphs and repositories to be aggregated from multiple sources.</li>
+<li>Includes <a href="http://www.w3.org/TR/json-ld/" title="JSON-LD 1.0">JSON-LD</a> support using the <a href="http://gkellogg.github.com/json-ld">JSON::LD</a> gem.</li>
+<li>Includes Aggregate Repository support using <a href="http://ruby-rdf.github.com/rdf">RDF::AggregateRepo</a>, which allows graphs and repositories to be aggregated from multiple sources.</li>
 <li>Includes <a href="http://www.w3.org/TR/sparql11-overview/">SPARQL</a> support using the <a href="http://ruby-rdf.github.com/sparql">SPARQL</a> and <a href="http://ruby-rdf.github.com/sparql-client">SPARQL::Client</a> gems</li>
 <li>Maintains release parity with RDF.rb.</li>
 </ul>
@@ -76,40 +76,43 @@ Nokogiri is only a soft dependency, so environments where using native gems is n
 include only the gems upon which they directly depend.</p>
 
 <ul>
+<li>Ruby (&gt;= 2.0)</li>
 <li>
-<a href="http://ruby-rdf.github.com/rdf">RDF.rb</a> ('~&gt; 1.1', '&gt;= 1.1.7')</li>
+<a href="http://ruby-rdf.github.com/rdf">RDF.rb</a> ('~&gt; 1.1', '&gt;= 1.1.11')</li>
 <li>
 <a href="http://ruby-rdf.github.com/rdf">RDF::AggregateRepo</a> ('~&gt; 1.1')</li>
-<li>[RDF::Isomorphic]<a href="'%7E%3E%201.1'"></a>
-</li>
 <li>
-<a href="http://ruby-rdf.github.com/rdf-json">RDF::JSON</a> ('~&gt; 1.1')</li>
+<a href="http://ruby-rdf.github.com/rdf-isomorphic">RDF::Isomorphic</a> ('~&gt; 1.1')</li>
 <li>
-<a href="http://ruby-rdf.github.com/rdf-microdata">RDF::Microdata</a> ('~&gt; 2.0')</li>
+<a href="http://ruby-rdf.github.com/rdf-json">RDF::JSON</a> ('~&gt; 1.1', '&gt;= 1.1.2')</li>
 <li>
-<a href="http://ruby-rdf.github.com/rdf-n3">RDF::N3</a> ('~&gt; 1.1')</li>
+<a href="http://ruby-rdf.github.com/rdf-microdata">RDF::Microdata</a> ('~&gt; 2.0', '&gt;= 2.0.1')</li>
 <li>
-<a href="http://ruby-rdf.github.com/rdf-rdfa">RDF::RDFa</a> ('~&gt; 1.1', '&gt;= 1.1.5')</li>
+<a href="http://ruby-rdf.github.com/rdf-n3">RDF::N3</a> ('~&gt; 1.1', '&gt;= 1.1.3')</li>
 <li>
-<a href="http://ruby-rdf.github.com/rdf-rdfxml">RDF::RDFXML</a> ('~&gt; 1.1', '&gt;= 1.1.3')</li>
+<a href="http://ruby-rdf.github.com/rdf-rdfa">RDF::RDFa</a> ('~&gt; 1.1', '&gt;= 1.1.6')</li>
+<li>
+<a href="http://ruby-rdf.github.com/rdf-rdfxml">RDF::RDFXML</a> ('~&gt; 1.1', '&gt;= 1.1.4')</li>
 <li>
 <a href="http://ruby-rdf.github.com/rdf-reasoner">RDF::Reasoner</a> ('~&gt; 0.2', '&gt;= 0.2.1')</li>
-<li>[RDF::TriG]<a href="'%7E%3E%201.1'," title="&gt;= 1.1.3"></a>
-</li>
+<li>
+<a href="http://ruby-rdf.github.com/rdf-trig">RDF::TriG</a> ('~&gt; 1.1', '&gt;= 1.1.4')</li>
 <li>
 <a href="http://ruby-rdf.github.com/rdf-trix">RDF::TriX</a> ('~&gt; 1.1')</li>
 <li>
-<a href="http://ruby-rdf.github.com/rdf-turtle">RDF::Turtle</a> ('~&gt; 1.1', '&gt;= 1.1.5')</li>
+<a href="http://ruby-rdf.github.com/rdf-turtle">RDF::Turtle</a> ('~&gt; 1.1', '&gt;= 1.1.6')</li>
 <li>
-<a href="http://gkellogg.github.com/json-ld">JSON::LD</a> ('~&gt; 1.1', '&gt;= 1.1.7')</li>
+<a href="http://ruby-rdf.github.com/rdf-vocab">RDF::Vocab</a> ('~&gt; 1.1', '&gt;= 1.1.5')</li>
 <li>
-<a href="http://ruby-rdf.github.com/sparql">SPARQL</a> ('~&gt; 1.1', '&gt;= 1.1.4')</li>
+<a href="http://gkellogg.github.com/json-ld">JSON::LD</a> (''~&gt; 1.1', '&gt;= 1.1.8')</li>
+<li>
+<a href="http://ruby-rdf.github.com/sparql">SPARQL</a> ('~&gt; 1.1', '&gt;= 1.1.5')</li>
 <li>
 <a href="http://ruby-rdf.github.com/sparql-client">SPARQL::Client</a> ('~&gt; 1.1', '&gt;= 1.1.3')</li>
 <li>
 <a href="http://rubygems.org/gems/nokogiri">Nokogiri</a> ('~&gt; 1.6')</li>
 <li>
-<a href="http://rubygems.org/gems/equivalent-xml">Equivalent-XML</a> ('~&gt; 0.4')</li>
+<a href="http://rubygems.org/gems/equivalent-xml">Equivalent-XML</a> ('~&gt; 0.5')</li>
 </ul>
 
 <h2>
